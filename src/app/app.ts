@@ -1,8 +1,12 @@
 import { Component, signal } from '@angular/core';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @Component({
-  imports: [],
   selector: 'app-root',
+  standalone: true,
+  imports: [HomeComponent, NavbarComponent, ProductsComponent],
   styleUrl: './app.scss',
   templateUrl: './app.html',
 })
